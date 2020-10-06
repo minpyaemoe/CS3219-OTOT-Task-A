@@ -13,12 +13,37 @@
     </style>
     <title>CS3219 OTOT Task A Static Web</title>
   </head>
+  <!-- <script type="text/javascript">
+
+    function callAPI() {
+      // var apiUrl = 'http://localhost:5000/api/getMessage';
+      var apiUrl = 'http://backend/api/getMessage';
+      fetch(apiUrl).then(response => {
+        alert(JSON.stringify(response));
+        return response;
+      }).then(data => {
+        // Work with JSON data here
+        alert("Nice");
+        console.log(JSON.stringify(data));
+        alert(data);
+      }).catch(err => {
+        // Do something for an error here
+        alert("Error");
+        console.log(JSON.stringify(err));
+      });
+    }
+  </script> -->
   <body>
       <div class="heading">
         <h1>CS3219 OTOT Task A Static Web</h1>
       </div>
       <div class="subheading">
-        <h2><a href="/get">Get Message from Server.</a><h2>
+        <h2>
+          <a href="/getMessage">Get Message from Server.</a>
+        <h2>
+        <!-- <button onclick="callAPI()">
+          Get Message from Server
+        </button> -->
       </div>
   </body>
 </html>
